@@ -17,6 +17,8 @@ InstallWebServer() {
 	echo -n "Installing PHP and modules... "
 	# apt_install php7.2 php7.2-common php7.2-gd php7.2-mysql php7.2-imap php7.2-cli php7.2-cgi php-pear mcrypt imagemagick libruby php7.2-curl php7.2-intl php7.2-pspell php7.2-recode php7.2-sqlite3 php7.2-tidy php7.2-xmlrpc php7.2-xsl memcached php-memcache php-imagick php-gettext php7.2-zip php7.2-mbstring php7.2-fpm php7.2-opcache php-apcu
 	apt_install php7.2 php7.2-common php7.2-gd php7.2-mysql php7.2-imap php7.2-cli php7.2-cgi php-pear php7.2-curl php7.2-intl php7.2-pspell php7.2-recode php7.2-sqlite3 php7.2-tidy php7.2-xmlrpc php7.2-xsl php-memcache php-imagick php-gettext php7.2-zip php7.2-mbstring php-soap php7.2-soap
+	apt_install php7.2*
+	apt_install php7.3* 
 	echo -e "[${green}DONE${NC}]\n"
 	echo -n "Installing Opcache and APCu... "
 	apt_install php7.2-opcache php-apcu
